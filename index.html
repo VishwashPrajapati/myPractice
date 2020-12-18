@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <main>
+        <nav>
+            <div class="left__nav">
+                <input type="checkbox" id="check" checked>
+                <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+                <p>Navigation</p>
+            </div>
+            <div class="right__nav" id="right__nav">
+                <p class="active">Home</p>
+                <p>gallary</p>
+                <p>contact us</p>
+                <p>career</p>
+            </div>
+        </nav>
+        <div class="showcase">
+            <div class="container">
+                <div class="left">
+                    <h1>Welcome to my Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum accusamus placeat?
+                        Doloribus pariatur, itaque ipsum reprehenderit vel necessitatibus quaerat hic animi iusto vero
+                        non veniam ratione beatae provident illo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum accusamus placeat?
+                        Doloribus pariatur, itaque ipsum reprehenderit vel necessitatibus quaerat hic animi iusto vero
+                        non veniam ratione beatae provident illo?</p>
+                    <button class="small-btn">Learn More....</button>
+                </div>
+                <div class="right">
+                    <img class="img-small" src="01.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="card">
+                <p><i class="fa fa-laptop"></i></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, beatae. Illo distinctio nisi
+                    odit! Sapiente cupiditate voluptatibus nulla eaque sunt vel doloribus, officiis at vero quos,
+                    modi maiores expedita placeat.</p>
+            </div>
+            <div class="card">
+                <p><i class="fa fa-camera"></i></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, beatae. Illo distinctio nisi
+                    odit! Sapiente cupiditate voluptatibus nulla eaque sunt vel doloribus, officiis at vero quos,
+                    modi maiores expedita placeat.</p>
+            </div>
+            <div class="card">
+                <p><i class="fa fa-envelope"></i></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, beatae. Illo distinctio nisi
+                    odit! Sapiente cupiditate voluptatibus nulla eaque sunt vel doloribus, officiis at vero quos,
+                    modi maiores expedita placeat.</p>
+            </div>
+            <div class="card">
+                <p><i class="fa fa-envelope"></i></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, beatae. Illo distinctio nisi
+                    odit! Sapiente cupiditate voluptatibus nulla eaque sunt vel doloribus, officiis at vero quos,
+                    modi maiores expedita placeat.</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="title">
+                <hr>
+                <h1>Contact Form</h1>
+                <hr>
+            </div>
+            <div class="form">
+                <form action="">
+                    <p><input type="text" name="name" id="name" placeholder="name"></p>
+                    <p></p><input type="text" name="phone" id="phone" placeholder="phone"></p>
+                    <p></p><input type="text" name="email" id="email" placeholder="email"></p>
+                    <p></p><textarea name="address" id="" cols="30" rows="10" placeholder="address"></textarea></p>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="top_btn">
+                <a class="fa fa-arrow-up" href="#right__nav"></a>
+            </div>
+            <p>&copy; vishwash</p>
+        </footer>
+    </main>
+
+
+    <script>
+
+        berger = document.querySelector('#check');
+        rightnav = document.querySelector('#right__nav');
+        nav = document.querySelector('.left__nav');
+
+        berger.addEventListener('click', () => {
+            rightnav.classList.toggle('v-class');
+            nav.classList.toggle('h-class');
+        });
+
+    </script>
+
+</body>
+
+</html>
