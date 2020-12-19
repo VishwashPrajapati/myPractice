@@ -19,7 +19,8 @@ nav{
     position:sticky;
     top: 0;
     left: 0;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(01.jpg);
+    background-color: black;
+    /* background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(01.jpg); */
     background-position: center;
     color: white;
     padding: 10px;
@@ -212,6 +213,11 @@ footer{
     background: linear-gradient(45deg, rgb(24, 31, 100),rgba(255, 0, 191, 0.829));
     color: white;
 }
+
+.navbar-fixed-top.scrolled {
+    background: rgb(92, 26, 100) !important;
+    transition: background-color 200ms linear;
+  }
 
 @media only screen and (max-width: 600px) {
     nav{

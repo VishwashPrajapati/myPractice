@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="my.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
 
     <main>
-        <nav>
+        <nav class="navbar-fixed-top">
             <div class="left__nav">
                 <input type="checkbox" id="check" checked>
                 <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
@@ -96,6 +98,18 @@
 
     <script>
 
+        $(document).ready(function () {
+            $(document).scroll(function () {
+                
+                var $nav = $("nav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <script>
+
+
         berger = document.querySelector('#check');
         rightnav = document.querySelector('#right__nav');
         nav = document.querySelector('.left__nav');
@@ -104,6 +118,7 @@
             rightnav.classList.toggle('v-class');
             nav.classList.toggle('h-class');
         });
+
 
     </script>
 
